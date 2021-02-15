@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Disclosure } from '../disclosure';
 
 const test1 = `Governments around the world spend an estimated US$9.5 trillion through contracts every year. 
