@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Item, Summary, Content} from './styledComponents'
-import './rotate.css'
+
 
 export const Disclosure = ({summary, children}) => {
 	const [isVisible,SetIsVisible] = useState(false);
@@ -10,9 +10,9 @@ export const Disclosure = ({summary, children}) => {
 	}
 
 	return <Item>
-		<Summary onClick={handleClick}>
+		<Summary onClick={handleClick} isVisible={isVisible}>
 			<h5>{summary}</h5>
-			<i className={ isVisible ? "fas fa-chevron-up rotate down":"fas fa-chevron-up rotate" }></i>
+			<i className="fas fa-chevron-up"></i>
 		</Summary>
 		<Content isVisible={isVisible}>
 			{children}
